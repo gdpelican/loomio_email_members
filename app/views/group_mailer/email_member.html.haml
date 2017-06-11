@@ -1,0 +1,6 @@
+.email-members
+
+  .email-members__byline.group-mailer__byline
+    = render 'thread_mailer/avatar', author: @sender
+    %span= raw t(:"loomio_email_members.email_body", author: @sender.name, group: @group.full_name)
+  .email-members__body.group-mailer__message-container.align-left= @body

@@ -1,0 +1,15 @@
+.email-members-form
+  .lmo-disabled-form{ng-if: "isDisabled"}
+  %md-input-container.md-block
+    %label{translate: "loomio_email_members.message_subject"}
+    %input{ng-model: "group.message.subject", placeholder: "{{'loomio_email_members.message_subject_placeholder' | translate}}"}
+
+  %md-input-container.md-block
+    %label{translate: "loomio_email_members.message_body"}
+    %textarea{ng-model: "group.message.body", placeholder: "{{'loomio_email_members.message_body_placeholder' | translate}}"}
+
+  %p.poll-common-helptext{translate: "loomio_email_members.email_members_helptext", translate-value-count: "{{group.membershipsCount-1}}"}
+
+  .lmo-flex.lmo-flex__space-between
+    %div
+    %md-button.md-raised.md-primary{ng-click: "send()", translate: "invitation_form.send"}

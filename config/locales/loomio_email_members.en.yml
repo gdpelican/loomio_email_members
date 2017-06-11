@@ -1,0 +1,9 @@
+en:
+  loomio_email_members:
+    email_members: Email members
+    message_subject: Subject
+    message_subject_placeholder: The subject of your message
+    message_body: Message
+    message_body_placeholder: Enter your message...
+    email_members_helptext: The {{count}} other member(s) of your group will receive this message
+    emails_sent: Message sent to {{count}} members

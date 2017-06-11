@@ -1,0 +1,2 @@
+.email-members-button
+  %md-button.md-primary.md-raised{ng-if: "group.subscriptionKind == 'paid'", ng-disabled: "group.membershipsCount < 2", ng-click: "emailMembers()", translate: "loomio_email_members.email_members"}

@@ -1,0 +1,3 @@
+.membership-email
+  .lmo-blank{ng-if: "membership.group().subscriptionKind == 'paid' && canAdministerGroup() && membership.user().email"}
+    %a{href: "mailto:{{membership.user().email}}"} {{membership.user().email}}

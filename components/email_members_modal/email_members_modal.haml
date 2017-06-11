@@ -1,0 +1,8 @@
+%md-dialog.email-members-modal
+  %md-toolbar
+    .md-toolbar-tools.lmo-flex__space-between
+      %i.material-icons email
+      %h1.lmo-h1{translate: "loomio_email_members.email_members"}
+      %material_modal_header_cancel_button
+  .md-dialog-content.md-body-1.lmo-slide-animation{ng-switch: "currentStep"}
+    %email_members_form{group: "group"}
